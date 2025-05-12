@@ -1,0 +1,179 @@
+.form {
+    padding: 3.2rem;
+    &__label {
+    //   font-size: 1.4rem;
+      font-weight: 500;
+      color: $color-black;
+      font-family: 'Readex Pro', sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: $color-black-80;
+    }
+  
+    &__input {
+      font-size: 1.5rem;
+      padding: 1.2rem 2.6rem;
+      background-color: $color-grey-1;
+      border: 1px solid $color-black-10;
+      border-radius: 16px;
+  
+      &::placeholder {
+        color: #32475c61;
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+  
+      &--dark {
+        background-color: #252525;
+        border: 1px solid #323539;
+        color: $color-white;
+  
+        &::placeholder {
+          color: #979aa0;
+        }
+
+
+      }
+
+      &--number-group {
+        border-left: unset;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 16px !important;
+        border-bottom-right-radius: 16px !important;
+        background-color: $color-grey-1;
+
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 .25rem rgba($color-primary, .25);
+        border-color: rgba($color-primary, .25);
+    }
+    }
+
+    &__number-select-group {
+        position: relative;
+        height: 100%;
+        background-color: $color-grey-1;
+        border: 1px solid $color-black-10;
+        padding: 1.2rem 2.6rem;
+
+        border-right: none;
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        &:focus {
+            border-color: $color-black-10 !important;
+            box-shadow: none !important;
+            outline: none !important;
+          }
+
+          &::placeholder {
+
+            font-family: 'Readex Pro', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+
+          }
+    }
+  
+    &__select {
+      font-size: 1.5rem;
+      padding: 1.2rem;
+      background-color: #f8f9fb;
+      border: 1px solid $color-black-10;
+      border-radius: 8px;
+  
+      option[value=""][disabled] {
+        display: none;
+      }
+  
+      &::placeholder {
+        color: #32475c61;
+      }
+    }
+
+    &__group-number {
+        padding: 0;
+        border: unset;
+        background-color: rgba(0,0,0,0);
+
+        span {
+            padding: 0;
+            border-right: none;
+            border: none;
+            border-top-left-radius: 16px !important;
+            border-bottom-left-radius: 16px !important;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            // overflow: hidden;
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1px;
+                height: 50%;
+                background-color: $color-black-50;
+    
+            }
+        }
+    }
+  
+    &__text-area {
+      font-size: 1.5rem;
+      padding: 1.2rem;
+      background-color: $color-grey-1;
+      border: 1px solid $color-black-10;
+      border-radius: 16px;
+  
+      &::placeholder {
+        color: #32475c61;
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 .25rem rgba($color-primary, .25);
+        border-color: rgba($color-primary, .25);
+    }
+    }
+  
+  
+    &__check-input {
+      border: 1px solid $color-black-10;
+      border-radius: 4px !important;
+      width: 2rem;
+      height: 2rem;
+  
+      &:checked {
+        background-color: $color-primary;
+      }
+      &:focus {
+        border-color: $color-primary !important;
+        box-shadow: 0 0 0 0.25rem rgba($color-primary, 0.25) !important;
+      }
+    }
+  
+    &__check-label {
+      color: $color-secondary;
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding-left: 1.5rem;
+      @include addMediaQuery(laptop) {
+        font-size: 1.1rem;
+      }
+    }
+  
+    &__group {
+    }
+  }
+  

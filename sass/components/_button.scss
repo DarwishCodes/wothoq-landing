@@ -1,0 +1,129 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 2.4rem;
+  transform: translateY(0);
+  transition: all 0.2s ease-in-out;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+
+  &-primary {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.12rem;
+    letter-spacing: 0;
+    color: $color-secondary;
+    background-color: $color-primary;
+    // max-width: 100%;
+    // width: 100%;
+    padding: 1.5rem 13rem;
+    border-radius: 50px;
+
+    @include addMediaQuery(phone-l) {
+     width: 100%;
+     padding: 1.5rem 2rem;
+
+    }
+    &:hover {
+      transform: translateY(-3px);
+      color: $color-secondary !important;
+      background-color: $color-primary !important;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0px 1px 1px 1px #32475c54;
+      color: $color-secondary !important;
+      background-color: $color-primary !important;
+    }
+  }
+
+  &-secondary {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.12rem;
+    letter-spacing: 0;
+    background-color: $color-secondary;
+    color: $color-primary;
+    // max-width: 100%;
+    // width: 100%;
+    padding: 1.5rem 13rem;
+    border-radius: 50px;
+
+    @include addMediaQuery(phone-l) {
+     width: 100%;
+     padding: 1.5rem 2rem;
+
+    }
+    &:hover {
+      transform: translateY(-3px);
+      background-color: $color-secondary !important;
+      color: $color-primary !important;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0px 1px 1px 1px #32475c54;
+      background-color: $color-secondary !important;
+      color: $color-primary !important;
+    }
+  }
+
+  &--no-animate {
+    &:hover {
+      transform: translateX(0) !important;
+    }
+    &:active {
+      transform: translateX(0) !important;
+    }
+  }
+
+  &--w-full {
+    width: 100%;
+  }
+
+  &-lang {
+    direction: ltr;
+    padding: 0.7rem 1.5rem;
+    background-color: $color-black-80 !important;
+    color: $color-white !important;
+    font-family: Readex Pro;
+    font-weight: 400;
+    font-size: 1.177rem;
+    line-height: 1.471rem;
+    letter-spacing: 0;
+    border-radius: 50px;
+
+    img {
+      width: 1.54rem;
+      height: 1.39rem;
+      margin-right: 0.5rem;
+    }
+
+  }
+}
+
+.btn-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color-primary;
+  text-decoration: none;
+
+  img {
+    transition: all 0.15s ease-in-out;
+  }
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:hover img {
+    transform: translateX(0.5rem);
+  }
+
+  &--no-animate {
+    &:hover img {
+      transform: translateX(0rem);
+    }
+  }
+}
