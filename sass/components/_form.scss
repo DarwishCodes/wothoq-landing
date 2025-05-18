@@ -7,14 +7,14 @@
       font-family: 'Readex Pro', sans-serif;
       font-weight: 400;
       font-size: 1.5rem;
-      color: $color-black-80;
+      color: $color-black;
     }
   
     &__input {
       font-size: 1.5rem;
       padding: 1.2rem 2.6rem;
       background-color: $color-grey-1;
-      border: 1px solid $color-black-10;
+      border: 1px solid $color-black;
       border-radius: 16px;
   
       &::placeholder {
@@ -57,7 +57,7 @@
         position: relative;
         height: 100%;
         background-color: $color-grey-1;
-        border: 1px solid $color-black-10;
+        border: 1px solid $color-black;
         padding: 1.2rem 2.6rem;
 
         border-right: none;
@@ -70,7 +70,7 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         &:focus {
-            border-color: $color-black-10 !important;
+            border-color: $color-black !important;
             box-shadow: none !important;
             outline: none !important;
           }
@@ -88,7 +88,7 @@
       font-size: 1.5rem;
       padding: 1.2rem;
       background-color: #f8f9fb;
-      border: 1px solid $color-black-10;
+      border: 1px solid $color-black;
       border-radius: 8px;
   
       option[value=""][disabled] {
@@ -120,7 +120,7 @@
                 display: block;
                 width: 1px;
                 height: 50%;
-                background-color: $color-black-50;
+                background-color: $color-black;
     
             }
         }
@@ -130,7 +130,7 @@
       font-size: 1.5rem;
       padding: 1.2rem;
       background-color: $color-grey-1;
-      border: 1px solid $color-black-10;
+      border: 1px solid $color-black;
       border-radius: 16px;
   
       &::placeholder {
@@ -149,7 +149,7 @@
   
   
     &__check-input {
-      border: 1px solid $color-black-10;
+      border: 1px solid $color-black;
       border-radius: 4px !important;
       width: 2rem;
       height: 2rem;

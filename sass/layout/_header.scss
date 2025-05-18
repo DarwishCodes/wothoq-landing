@@ -1,0 +1,24 @@
+.header {
+
+  &__button {
+
+
+  }
+
+  &__logo {
+
+    img {
+    height: 6.2rem;
+
+    }
+  }
+}
+
+.header-area .main-menu li a {
+  font-family: "Lugia", sans-serif;
+font-weight: 400;
+font-size: 1.8rem;
+line-height: 2.926rem;
+letter-spacing: 0;
+text-transform: capitalize;
+}

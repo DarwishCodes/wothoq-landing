@@ -1,199 +1,216 @@
-body {
-  // font-family: "Poppins", sans-serif;
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 100;
+  /* Thin */
+  src: local("Lufga Thin"), url("LufgaThin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 100;
+  /* Thin Italic */
+  src: local("Lufga Thin Italic"), url("LufgaThinItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 200;
+  /* ExtraLight */
+  src: local("Lufga ExtraLight"), url("LufgaExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 200;
+  /* ExtraLight Italic */
+  src: local("Lufga ExtraLight Italic"),
+    url("LufgaExtraLightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 300;
+  /* Light */
+  src: local("Lufga Light"), url("LufgaLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 300;
+  /* Light Italic */
+  src: local("Lufga Light Italic"), url("LufgaLightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  src: local("Lufga Regular"), url("LufgaRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 400;
+  /* Italic */
+  src: local("Lufga Italic"), url("LufgaItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 500;
+  /* Medium */
+  src: local("Lufga Medium"), url("LufgaMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 500;
+  /* Medium Italic */
+  src: local("Lufga Medium Italic"),
+    url("LufgaMediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 600;
+  /* SemiBold */
+  src: local("Lufga SemiBold"), url("LufgaSemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 600;
+  /* SemiBold Italic */
+  src: local("Lufga SemiBold Italic"),
+    url("LufgaSemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 700;
+  /* Bold */
+  src: local("Lufga Bold"), url("LufgaBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 700;
+  /* Bold Italic */
+  src: local("Lufga Bold Italic"), url("LufgaBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 800;
+  /* ExtraBold */
+  src: local("Lufga ExtraBold"), url("LufgaExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 800;
+  /* ExtraBold Italic */
+  src: local("Lufga ExtraBold Italic"),
+    url("LufgaExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 900;
+  /* Black */
+  src: local("Lufga Black"), url("LufgaBlack.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: italic;
+  font-weight: 900;
+  /* Black Italic */
+  src: local("Lufga Black Italic"), url("LufgaBlackItalic.woff") format("woff");
+}
+
+* {
+  font-family: "Lufga", sans-serif;
 }
 
 .heading {
-  color: $color-secondary;
-  @include addMediaQuery(laptop) {
-    text-align: center;
-  }
-  &--primary {
-    color: $color-black-80;
-    font-family: "Lalezar", serif;
-    font-style: normal;
-    font-weight: 400;
-    // font-size: 6.4rem;
-    font-size: 5rem;
-    line-height: 7rem;
-    text-rendering: optimizeLegibility;
+  & &__secondary {
+    font-family: "Lufga", sans-serif;
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 6.48rem;
     letter-spacing: 0;
-    font-weight: normal;
-    @include addMediaQuery(laptop) {
-      font-size: 5.2rem;
+	margin: 1rem 0;
 
-    }
-    @include addMediaQuery(tablet) {
+	&--inter {
+		    font-family: "Inter", sans-serif;
+	}
+
+	&--shape-1 {
+		transform: scaleX(-1);
+		margin: 1.5rem 0;
+	}
+
+  	&--shape-2 {
+		transform: scaleX(-1);
+	}
+	&--w-36 {
+		width: 36rem;
+	}
+	&--w-35 {
+		width: 35rem;
+	}
+    &--underline {
       font-size: 4.2rem;
-      line-height: 5rem;
-      font-size: 3.2rem;
-
-    }
-
-    @include addMediaQuery(phone-l) {
-      font-size: 3.4rem;
-    }
-  }
-
-  &--primary-underline {
-    position: relative;
-    img {
-      position: absolute;
-      right: 0;
-      bottom: -2.5rem;
-      width: 100%;
-
-      @include addMediaQuery(laptop) {
-        right: unset;
-        right: 50%;
-        // transform: translateX(50%);
-        transform: translateX(50%) translateY(5px);
-      }
-      @include addMediaQuery(tablet) {
-        width: 10rem;
-        // bottom: -2.5rem;
-      }
-
-    }
-
-    span {
-      margin-bottom: 4rem;
-      display: inline-block;
-
-      @include addMediaQuery(tablet) {
-        width: 10rem;
-        // bottom: -2.5rem;
-        // margin-bottom: 3rem;
-      }
-    }
-
-    &-hero {
-
-    }
-
-    &-2 {
-      display: inline-block;
-
-    }
-
-    &-block {
-      display: block;
-
-
-      img {
-        bottom: -0.5rem;
-        width: 15rem;
-
-        @include addMediaQuery(tablet) {
-          bottom: 1.5rem;
-          width: 10rem;
-
-        }
-        
-      }
-    }
-
-    &-block-2 {
-      display: block;
-
-      img {
-        left: 0;
-        right: unset;
-        bottom: -5.5rem;
-
-        @include addMediaQuery(laptop) {
-          right: 50%;
-          transform: translateX(50%);
-          left: unset;
-        }
-        @include addMediaQuery(tablet) {
-          bottom: -2.5rem;
-        }
-      }
-    }
-  }
-  
-
-  &--primary-green {
-    color: $color-primary;
-  }
-
-  &--secondary {
-    color: $color-black;
-    font-family: 'Lalezar', sans-serif;
-    font-weight: 400;
-    font-size: 3.3rem;
-    line-height: 4.7rem;
-    letter-spacing: 0;
-
-    @include addMediaQuery(tablet) {
-      font-size: 2.8rem;
-    }
-    // margin-bottom: 1rem;
-
-    span {
-      color: $color-secondary;
-    }
-
-    .color-blue {
-    }
-
-    &--color-white {
-    }
-
-    &--color-blue {
-    }
-  }
-
-  &--tertiary {
-    font-weight: 500;
-    font-size: 3.2rem;
-
-    &--font-weight-700 {
-      font-weight: 700;
-    }
-    @include addMediaQuery(tablet) {
-      font-size: 2.2rem;
-    }
-    // margin-bottom: 1rem;
-
-    span {
-      color: $color-secondary;
+      line-height: 0.83;
       font-weight: 600;
-    }
-  }
+      display: inline-block;
+      position: relative;
+      color: $color-primary;
 
-  &--fourth {
-    font-weight: 500;
-    font-size: 2.4rem;
+	  span {
+		height: 1rem;
+		display: block;
+	  }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: var(--theme);
+        bottom: 0;
+        inset-inline-start: 0;
+      }
 
-    @include addMediaQuery(tablet) {
-      font-size: 2.2rem;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: var(--theme);
+        bottom: 4px;
+        inset-inline-start: 0;
+      }
     }
-    &--back-green {
-      background-color: $color-primary;
-      color: $color-white;
-      padding: 2.3rem 4rem;
-    }
-
-    small {
-      font-size: 1.4rem;
-    }
-
-    strong {
-      margin-right: 2.5rem;
-    }
-  }
-  &--font-weight-500 {
-    font-weight: 500;
-  }
-  &--font-weight-700 {
-    font-weight: 700;
-  }
-  &--font-weight-600 {
-    font-weight: 600;
   }
 }
-
 .paragraph {
   font-family: "IBM Plex Sans Arabic", serif;
   font-size: 2.4rem;
@@ -201,7 +218,7 @@ body {
   letter-spacing: 0;
   font-weight: 400;
   word-wrap: break-word;
-  color: $color-black-80;
+  color: $color-black;
 
   @include addMediaQuery(laptop) {
     text-align: center;
@@ -213,8 +230,8 @@ body {
 
   &--size-32 {
     font-size: 3.2rem;
-
   }
+
   &--color-white {
     color: $color-white;
   }
@@ -230,9 +247,11 @@ body {
   &--font-weight-500 {
     font-weight: 500;
   }
+
   &--font-weight-700 {
     font-weight: 700;
   }
+
   &--font-weight-600 {
     font-weight: 600;
   }
