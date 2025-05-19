@@ -1,0 +1,153 @@
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Connecting line that spans across all steps */
+.steps-container::before {
+    content: '';
+    position: absolute;
+    top: 63px;
+    /* Aligns with the center of the dots */
+    left: 58px;
+    /* Start after first dot */
+    right: 58px;
+    /* End before last dot */
+    height: 2px;
+    background-color: #e5e7eb;
+    z-index: 1;
+}
+
+.step {
+    background: white;
+    // border-radius: 12px;
+    padding: 40px 0;
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    position: relative;
+    flex: 1;
+    max-width: 280px;
+    z-index: 2;
+}
+
+.step:not(:last-child) {
+    // padding-right: 30px;
+    // border-right: 2px solid #e5e7eb;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        /* Aligns with the center of the dots */
+        left: 0;
+        /* Start after first dot */
+        /* End before last dot */
+        height: 2px;
+        width: 100%;
+        background-color: #e5e7eb;
+        z-index: 1;
+    }
+}
+
+.step-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #1f2937;
+    border-radius: 50%;
+    margin-right: 16px;
+    position: relative;
+    z-index: 3;
+    bottom: -1.6rem;
+}
+
+.step-number {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+    letter-spacing: 0.5px;
+}
+
+.step-content .step-title {
+    font-family: "Lufga", sans-serif;
+    font-weight: 600;
+    font-size: 23.87px;
+    line-height: 26px;
+    color: #1f2937;
+    margin-bottom: 24px;
+    margin-top: 50px;
+}
+
+.step-description {
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.step-content {
+    // border-right: 2px solid #e5e7eb;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: -3rem;
+        /* Aligns with the center of the dots */
+        /* Start after first dot */
+        /* End before last dot */
+        height: 80%;
+        width: 2px;
+        top: 6.3rem;
+        background-color: #e5e7eb;
+        z-index: 1;
+
+    }
+}
+
+.step-no-border {
+    &::after {
+        display: none;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .steps-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .steps-container::before {
+        display: none;
+    }
+
+    .step {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .step {
+        padding: 30px 25px;
+        max-width: none;
+    }
+
+    .step-title {
+        font-size: 24px;
+    }
+
+    body {
+        padding: 40px 20px;
+    }
+}

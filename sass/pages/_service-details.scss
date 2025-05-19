@@ -1,0 +1,139 @@
+.section-offering {
+    position: relative;
+    margin: 14rem 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url("../imgs/gallery/bg-3.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    &__title {
+        h2 {
+            font-family: "Lufga", sans-serif;
+            font-weight: 700;
+            font-size: 4.57rem;
+            line-height: 5rem;
+            letter-spacing: 0;
+        }
+    }
+
+    &__text {
+        p {
+            font-family: "Lufga", sans-serif;
+            font-weight: 400;
+            font-size: 1.702rem;
+            line-height: 2.592rem;
+            color: #555555;
+        }
+    }
+
+    &__title-3 {
+        h3 {
+            font-family: "Lufga", sans-serif;
+            font-weight: 600;
+            font-size: 2.742rem;
+            line-height: 30px;
+        }
+    }
+
+    &__list {}
+
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        font-family: "Lufga", sans-serif;
+        font-weight: 400;
+        font-size: 1.688rem;
+        line-height: 2.399rem;
+        margin-bottom: 2rem;
+
+        span img {
+            width: 6.4rem;
+            height: 6.4rem;
+        }
+
+        span {
+            margin-right: 2rem;
+        }
+    }
+
+    &__add {
+        p {
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            font-family: "Lufga", sans-serif;
+            font-weight: 600;
+            font-size: 1.673rem;
+            line-height: 2.592rem;
+        }
+    }
+
+    &__plus-icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1.5rem;
+    }
+}
+
+.section-story {
+    padding-bottom: 10rem;
+}
+
+.section-steps {
+    padding: 5rem 0rem 10rem 0;
+}
+
+.section-consultants {
+    background-image: url("../imgs/gallery/bg-4.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-black, 0.5);
+        mix-blend-mode: multiply;
+    }
+
+    &__box {
+        background-image: url("../imgs/shape/square-fade.svg");
+        z-index: 2;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 39rem;
+        height: 29.4rem;
+        position: absolute;
+        bottom: 0;
+        right: 20%;
+    }
+
+    &__nubmer {}
+
+    &__label {}
+}
+
+.section-ux {
+    background-color: #121212;
+    padding: 10.4rem 0;
+}

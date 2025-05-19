@@ -1,0 +1,39 @@
+.card-goal {
+    padding: 4rem 4rem 4rem 4rem;
+    &__title {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        h3 {
+            font-weight: 100;
+            font-size: 3rem;
+            line-height: 3.6rem;
+            font-family: "Lufga", sans-serif;
+            letter-spacing: 0;
+
+            span {
+                font-weight: 600;
+                font-family: "Lufga", sans-serif;
+                letter-spacing: 0;
+
+            }
+        }
+    }
+
+    &__text {
+        font-family: "Lufga", sans-serif;
+        font-weight: 400;
+        font-size: 1.716rem;
+        line-height: 2.592rem;
+        letter-spacing: 0;
+
+    }
+
+    &--border-right {
+        border-right: 1px solid #00000033;
+    }
+
+    &--border-top {
+        border-top: 1px solid #00000033;
+    }
+}

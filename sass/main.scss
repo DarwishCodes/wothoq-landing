@@ -8,14 +8,21 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/card-goal";
 @import "components/card-service";
+@import "components/card-ux";
 @import "components/form";
 @import "components/partners";
+@import "components/steps";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/hero";
 @import "layout/navigation";
 
+@import "pages/about-us";
 @import "pages/contact-us";
 @import "pages/home";
+@import "pages/our-products";
+@import "pages/service-details";

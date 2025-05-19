@@ -1,0 +1,20 @@
+.card-ux {
+
+    &__icon {
+        margin-bottom: 5rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        h3 {
+            font-family: "Lufga", sans-serif;
+            font-weight: 700;
+            font-size: 1.994rem;
+            line-height: 2.5rem;
+            color: $color-white;
+        }
+    }
+
+    &__text {}
+}

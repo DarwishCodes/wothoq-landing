@@ -1,0 +1,39 @@
+.section-brands {
+    padding: 14rem 0 10rem 0;
+
+    &__brand {
+        width: 100%;
+    }
+
+    &__heading {
+        h2 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-weight: 700;
+            font-size: 6rem;
+            line-height: 9.4rem;
+
+            span {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-weight: 400;
+
+            }
+
+        }
+
+        h4 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2rem;
+
+            span {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-weight: 700;
+
+            }
+
+        }
+
+
+    }
+}
