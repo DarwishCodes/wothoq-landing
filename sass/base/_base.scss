@@ -23,10 +23,10 @@ body {
 }
 
 .container {
-  max-width: 155.8rem;
-  padding: 0 6rem;
+  // max-width: 155.8rem;
+  // padding: 0 6rem;
 
-  @include addMediaQuery(laptop) {
-    padding: 0 2.5rem;
-  }
+  // @include addMediaQuery(laptop) {
+  //   padding: 0 2.5rem;
+  // }
 }
