@@ -346,6 +346,21 @@ body {
   background-color: #01DDF0;
   color: #000000; }
 
+.wc-btn {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 0;
+  font-weight: 500;
+  padding: 1.4rem 2rem; }
+
+.wc-btn-primary {
+  background-color: #01DDF0;
+  color: #000000; }
+  .wc-btn-primary--text-white {
+    color: #ffffff; }
+
 .btn-link {
   font-family: "Lufga", sans-serif;
   font-weight: 500;
@@ -1451,11 +1466,11 @@ body {
 
 .team-area .team-wrapper-box .shape-1 {
   position: absolute;
-  width: 200px;
+  width: 130px;
   inset-inline-end: 9%;
-  top: -150px;
+  top: -77px;
   z-index: 1;
-  right: 0; }
+  right: -10px; }
 
 @media only screen and (max-width: 1919px) {
   .team-area .team-wrapper-box .shape-1 {
@@ -1566,6 +1581,228 @@ body {
   margin-inline: unset;
   text-transform: unset; }
 
+.hero-contact-area-inner {
+  padding-top: 217px;
+  padding-bottom: 30px;
+  margin-inline-end: calc((100vw - var(--container-max-widths))/-2 - 12px); }
+
+.contact-area-inner {
+  background-color: #ffffff; }
+
+@media only screen and (max-width: 1919px) {
+  .hero-contact-area-inner {
+    padding-top: 147px; } }
+
+@media only screen and (max-width: 1199px) {
+  .hero-contact-area-inner {
+    padding-top: 127px; } }
+
+@media only screen and (max-width: 991px) {
+  .hero-contact-area-inner {
+    padding-top: 127px; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-contact-area-inner {
+    margin-inline-end: 0; } }
+
+.hero-contact-area .section-title {
+  margin-top: 0;
+  font-family: "Lufga", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 95px;
+  text-transform: unset; }
+
+.hero-contact-area .contact-box {
+  padding: 85px 30px 40px;
+  background-color: var(--black);
+  position: relative;
+  z-index: 1; }
+
+.dark .hero-contact-area .contact-box {
+  background-color: #171717; }
+
+.hero-contact-area .contact-box .title {
+  font-size: 18px;
+  color: var(--white-2);
+  line-height: 1;
+  display: inline-block; }
+
+.hero-contact-area .contact-box .link {
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 12px;
+  color: var(--white); }
+
+.hero-contact-area .contact-box .shape-1 {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 10px;
+  z-index: -1; }
+
+.hero-contact-area .section-content {
+  display: grid;
+  gap: 40px 60px;
+  grid-template-columns: 1fr 960px; }
+
+@media only screen and (max-width: 1919px) {
+  .hero-contact-area .section-content {
+    grid-template-columns: 1fr 840px; } }
+
+@media only screen and (max-width: 1399px) {
+  .hero-contact-area .section-content {
+    grid-template-columns: 1fr 760px; } }
+
+@media only screen and (max-width: 1199px) {
+  .hero-contact-area .section-content {
+    grid-template-columns: 1fr 580px; } }
+
+@media only screen and (max-width: 991px) {
+  .hero-contact-area .section-content {
+    grid-template-columns: 1fr; } }
+
+.hero-contact-area .content-last {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 300px 1fr;
+  align-items: flex-end; }
+
+@media only screen and (max-width: 1199px) {
+  .hero-contact-area .content-last {
+    grid-template-columns: 260px 1fr; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-contact-area .content-last {
+    gap: 15px; } }
+
+@media (max-width: 575px) {
+  .hero-contact-area .content-last {
+    grid-template-columns: 1fr; } }
+
+.hero-contact-area .content-last .col-first {
+  display: grid;
+  gap: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .hero-contact-area .content-last .col-first {
+    gap: 15px; } }
+
+.hero-contact-area .content-last .col-second {
+  display: grid;
+  gap: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .hero-contact-area .content-last .col-second {
+    gap: 15px; } }
+
+.contact-area .section-title {
+  max-width: 850px;
+  color: #000000;
+  font-family: "Lufga", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 95px;
+  text-transform: unset;
+  margin: 0; }
+
+.contact-area .section-header {
+  display: grid;
+  gap: 20px 60px;
+  grid-template-columns: 1fr auto; }
+
+@media only screen and (max-width: 991px) {
+  .contact-area .section-header {
+    grid-template-columns: 1fr; } }
+
+.contact-area .section-header .text {
+  max-width: 300px; }
+
+.contact-area .contact-formwrap {
+  display: grid;
+  gap: 50px 30px;
+  grid-template-columns: repeat(2, 1fr); }
+
+@media only screen and (max-width: 767px) {
+  .contact-area .contact-formwrap {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px 30px; } }
+
+.contact-area .contact-formwrap .messages {
+  grid-column: span 2; }
+
+@media only screen and (max-width: 767px) {
+  .contact-area .contact-formwrap .messages {
+    grid-column: auto; } }
+
+.contact-area .contact-formfield input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all .5s;
+  font-size: 16px; }
+
+.contact-area .contact-formfield input:focus {
+  border-color: var(--primary); }
+
+.contact-area .submit-btn {
+  margin-top: 60px;
+  text-align: left; }
+
+@media only screen and (max-width: 767px) {
+  .contact-area .submit-btn {
+    margin-top: 20px; } }
+
+.contact-area .section-content {
+  display: grid;
+  gap: 40px 60px;
+  grid-template-columns: 1fr 740px;
+  margin-top: 112px; }
+
+@media only screen and (max-width: 1919px) {
+  .contact-area .section-content {
+    margin-top: 72px; } }
+
+@media only screen and (max-width: 1399px) {
+  .contact-area .section-content {
+    grid-template-columns: 1fr 640px; } }
+
+@media only screen and (max-width: 1199px) {
+  .contact-area .section-content {
+    grid-template-columns: 1fr 600px;
+    margin-top: 42px; } }
+
+@media only screen and (max-width: 991px) {
+  .contact-area .section-content {
+    grid-template-columns: 1fr; } }
+
+.contact-area .info-box {
+  text-align: left; }
+
+.contact-area .info-box .text {
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: var(--primary);
+  max-width: 360px; }
+
+.contact-area .contact-list {
+  margin-top: 26px; }
+
+.contact-area .contact-list li {
+  font-size: 18px;
+  line-height: 24px; }
+
+.contact-area .contact-list li:not(:first-child) {
+  margin-top: 15px; }
+
+.contact-area .contact-list li a {
+  text-decoration: underline;
+  text-underline-offset: 2px; }
+
+/*# sourceMappingURL=master-contact-bold.css.map */
 .hero-area {
   position: relative; }
   .hero-area::after {

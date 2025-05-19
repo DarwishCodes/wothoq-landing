@@ -21,6 +21,27 @@
 
 }
 
+.wc-btn {
+
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 0;
+  font-weight: 500;
+  padding: 1.4rem 2rem;
+}
+
+.wc-btn-primary {
+  background-color: #01DDF0;
+  color: $color-black;
+
+  &--text-white {
+    color: $color-white;
+  }
+
+}
+
 .btn-link {
   font-family: "Lufga", sans-serif;
   font-weight: 500;
