@@ -96,6 +96,10 @@
     padding: 10rem 0;
     background-color: rgba($color-primary, 0.1);
 
+    &--bg-white {
+        background-color: $color-white;
+    }
+
     &__photo {
         background-image: url("../imgs/gallery/bg-1.png");
         height: 27.6rem;

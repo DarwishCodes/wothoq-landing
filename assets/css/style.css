@@ -158,14 +158,18 @@ body {
   font-size: 5.6rem;
   line-height: 6.48rem;
   letter-spacing: 0;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  position: relative; }
   .heading .heading__secondary--inter {
     font-family: "Inter", sans-serif; }
   .heading .heading__secondary--shape-1 {
     transform: scaleX(-1);
     margin: 1.5rem 0; }
   .heading .heading__secondary--shape-2 {
-    transform: scaleX(-1); }
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    right: 0; }
   .heading .heading__secondary--w-36 {
     width: 36rem; }
   .heading .heading__secondary--w-35 {
@@ -1637,6 +1641,8 @@ body {
 .section-services {
   padding: 10rem 0;
   background-color: rgba(1, 221, 240, 0.1); }
+  .section-services--bg-white {
+    background-color: #ffffff; }
   .section-services__photo {
     background-image: url("../imgs/gallery/bg-1.png");
     height: 27.6rem;

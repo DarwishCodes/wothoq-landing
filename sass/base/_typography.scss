@@ -157,26 +157,33 @@
     font-size: 5.6rem;
     line-height: 6.48rem;
     letter-spacing: 0;
-	margin: 1rem 0;
+    margin: 1rem 0;
+    position: relative;
 
-	&--inter {
-		    font-family: "Inter", sans-serif;
-	}
+    &--inter {
+      font-family: "Inter", sans-serif;
+    }
 
-	&--shape-1 {
-		transform: scaleX(-1);
-		margin: 1.5rem 0;
-	}
+    &--shape-1 {
+      transform: scaleX(-1);
+      margin: 1.5rem 0;
+    }
 
-  	&--shape-2 {
-		transform: scaleX(-1);
-	}
-	&--w-36 {
-		width: 36rem;
-	}
-	&--w-35 {
-		width: 35rem;
-	}
+    &--shape-2 {
+      transform: scaleX(-1);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &--w-36 {
+      width: 36rem;
+    }
+
+    &--w-35 {
+      width: 35rem;
+    }
+
     &--underline {
       font-size: 4.2rem;
       line-height: 0.83;
@@ -185,10 +192,11 @@
       position: relative;
       color: $color-primary;
 
-	  span {
-		height: 1rem;
-		display: block;
-	  }
+      span {
+        height: 1rem;
+        display: block;
+      }
+
       &::before {
         position: absolute;
         content: "";
@@ -211,6 +219,7 @@
     }
   }
 }
+
 .paragraph {
   font-family: "IBM Plex Sans Arabic", serif;
   font-size: 2.4rem;
