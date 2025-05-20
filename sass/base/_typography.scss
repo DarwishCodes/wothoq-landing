@@ -282,3 +282,9 @@
     font-size: 1.4rem;
   }
 }
+
+.font-heading-teko-bold h1 {
+  @include addMediaQuery(phone-l) {
+    font-size: 5.6rem;
+  }
+}

@@ -237,6 +237,10 @@ body {
   .paragraph--s {
     font-size: 1.4rem; }
 
+@media (max-width: 576px) {
+  .font-heading-teko-bold h1 {
+    font-size: 5.6rem; } }
+
 .u-center-text {
   text-align: center; }
 
