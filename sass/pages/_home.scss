@@ -282,6 +282,7 @@
 .work-area {
     margin: 5rem 0;
 }
+
 .section-zoho {
     padding: 10.4rem 0;
 
@@ -295,7 +296,7 @@
 
         img {
             height: 6.2rem;
-                        margin-bottom: 2rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -308,9 +309,9 @@
         margin-bottom: 2rem;
 
         @include addMediaQuery(tablet) {
-                  font-size: 2.8rem;
-                  line-height: 4rem;
-  
+            font-size: 2.8rem;
+            line-height: 4rem;
+
         }
     }
 
@@ -543,4 +544,9 @@
 
 .hero-area .hero-social .hero-social-links a:hover {
     color: var(--secondary)
+}
+
+.testimonial-area .container {
+    z-index: 100000;
+    position: relative;
 }

@@ -3027,6 +3027,10 @@ body {
 .hero-area .hero-social .hero-social-links a:hover {
   color: var(--secondary); }
 
+.testimonial-area .container {
+  z-index: 100000;
+  position: relative; }
+
 .section-brands {
   padding: 14rem 0 10rem 0; }
   .section-brands__brand {
