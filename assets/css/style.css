@@ -1441,8 +1441,13 @@ body {
     position: relative; }
   .section-portfolio__shape {
     position: absolute;
-    bottom: -10rem;
-    right: 50%; }
+    bottom: -5rem;
+    left: -5rem; }
+    @media (max-width: 991px) {
+      .section-portfolio__shape {
+        bottom: -10rem;
+        right: 50%;
+        left: unset; } }
 
 .section-our-goal {
   background-color: rgba(1, 221, 240, 0.1);

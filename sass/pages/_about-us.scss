@@ -5,6 +5,7 @@
         padding: 13rem 4rem 13rem 4rem;
 
     }
+
     &__title {
         h1 {
             font-family: "Lufga", sans-serif;
@@ -46,8 +47,14 @@
 
     &__shape {
         position: absolute;
-        bottom: -10rem;
-        right: 50%;
+        bottom: -5rem;
+        left: -5rem;
+
+        @include addMediaQuery(laptop) {
+            bottom: -10rem;
+            right: 50%;
+            left: unset;
+        }
 
     }
 }
@@ -203,8 +210,8 @@
     line-height: 1;
     color: $color-white;
 
-     a:hover {
-            color: $color-white;
+    a:hover {
+        color: $color-white;
 
     }
 }
