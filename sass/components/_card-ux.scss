@@ -1,5 +1,10 @@
 .card-ux {
 
+    @include addMediaQuery(laptop) {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
     &__icon {
         margin-bottom: 5rem;
     }

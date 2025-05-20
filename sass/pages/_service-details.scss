@@ -14,6 +14,10 @@
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
+
+        @include addMediaQuery(laptop) {
+            display: none;
+        }
     }
 
     &__title {
@@ -126,6 +130,16 @@
         position: absolute;
         bottom: 0;
         right: 20%;
+
+        @include addMediaQuery(laptop) {
+            width: 29rem;
+            height: 19.4rem;
+        }
+
+        @include addMediaQuery(laptop) {
+            width: 19rem;
+            height: 14.4rem;
+        }
     }
 
     &__nubmer {}

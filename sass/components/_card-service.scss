@@ -1,6 +1,10 @@
 .card-service {
     position: relative;
     margin: 2rem 2rem;
+
+    @include addMediaQuery(tablet) {
+        margin-top: 5rem;
+    }
     & &__icon {
         margin-bottom: 2.4rem;
 
@@ -36,5 +40,11 @@
             right: 0;
             top: 0;
         }
+
+            @include addMediaQuery(laptop) {
+        &:after {
+            display: none;
+        }
+    }
     }
 }

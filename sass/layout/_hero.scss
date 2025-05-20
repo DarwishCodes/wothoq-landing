@@ -18,6 +18,10 @@
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
+
+        @include addMediaQuery(laptop) {
+            display: none;
+        }
     }
 
     &::before {
@@ -32,6 +36,11 @@
         background-position: center;
         background-repeat: no-repeat;
         z-index: 2;
+
+        @include addMediaQuery(laptop) {
+            position: unset;
+            display: none;
+        }
     }
 }
 
@@ -41,6 +50,11 @@
     gap: 80px;
     align-items: center;
     // min-height: 80vh;
+
+    @include addMediaQuery(laptop) {
+        flex-direction: column;
+        display: flex;
+    }
 }
 
 .hero-left {
@@ -263,6 +277,12 @@
         position: absolute;
         bottom: 2.5rem;
         z-index: 20;
+
+        @include addMediaQuery(laptop) {
+            position: unset;
+            margin-right: 3rem;
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -306,6 +326,11 @@
     padding: 40px;
     box-sizing: border-box;
     margin-bottom: -6rem;
+
+    @include addMediaQuery(laptop) {
+            margin-bottom: 2rem;
+
+    }
 }
 
 .awards-text {
@@ -340,6 +365,11 @@
     height: 7rem;
     background-color: white;
     clip-path: polygon(0 100%, 100% 100%, 100% 0);
+
+    @include addMediaQuery(laptop) {
+        background-color: $color-black;
+        display: none;
+    }
 }
 
 .geometric-shape-2 {

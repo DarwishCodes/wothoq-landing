@@ -27,6 +27,12 @@
     line-height: 13.224rem;
     letter-spacing: 0;
     position: relative;
+
+
+    @include addMediaQuery(tablet) {
+        font-size: 7rem;
+        line-height: 7.224rem;
+    }
 }
 
 .hero-area .section-title .marked {
@@ -36,32 +42,51 @@
     width: 10.6rem;
     position: absolute;
     bottom: -1rem;
+
+    @include addMediaQuery(tablet) {
+        left: 0;
+    }
 }
 
 .hero-area .hero-thumb .thumb-2 {
-    // overflow: hidden;
-    // -webkit-mask-image: unset;
-    // border-radius: 10px;
-    // height: 52rem;
-
-    background-image: url(../imgs/gallery/hero-2.png);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    -webkit-mask-image: unset;
-    -webkit-mask-size: unset;
-    -webkit-mask-position: unset;
-    -webkit-mask-repeat: unset;
-    width: 29.1rem;
-    border-radius: 10px;
+    -webkit-mask-image: url(../imgs/gallery/img-s-68--mask-new.png);
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    margin-top: 10.4rem;
+    border-radius: 6px;
     overflow: hidden;
-    border-bottom-left-radius: 0;
 }
 
 .hero-area .video-btn-box {
     top: 91%;
     right: 10%;
+
+    &--mobile {
+
+        display: none;
+
+        @include addMediaQuery(laptop) {
+            display: block;
+            margin-top: 1rem;
+
+        }
+    }
+
+    &--desktop {
+        display: block;
+
+        @include addMediaQuery(laptop) {
+            display: none;
+
+        }
+
+    }
+
+    @include addMediaQuery(laptop) {
+        position: unset;
+
+    }
 }
 
 .hero-area .section-title.section-title-secondary {
@@ -70,10 +95,26 @@
     font-size: 7.2rem;
     line-height: 13.224rem;
     letter-spacing: 0;
+
+    @include addMediaQuery(tablet) {
+        line-height: 11.224rem;
+    }
+}
+
+.hero-area .section-content {
+
+    @include addMediaQuery(laptop) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .hero-area .section-content .text {
     max-width: unset;
+
+    @include addMediaQuery(laptop) {
+        color: $color-black !important;
+    }
 }
 
 .hero-area .section-content .content-bottom {
@@ -112,10 +153,23 @@
 
 .thumb-wrapper {
     margin-right: 4rem;
+
+    @include addMediaQuery(laptop) {
+        margin-right: 0;
+    }
 }
 
 .section-partners {
     padding: 14rem 0;
+}
+
+.content-last .shape-1 {
+
+    @include addMediaQuery(laptop) {
+        inset-inline-start: 0 !important;
+        top: 20% !important;
+
+    }
 }
 
 .hero-area-inner .area-shape-1 {
@@ -136,6 +190,8 @@
     /* Try different values */
     background-size: cover;
     background-position: center;
+
+
 
     & &__title {
         font-family: "Lufga", sans-serif;
@@ -167,10 +223,18 @@
         /* Try different values */
         background-size: contain;
         background-position: top;
+
+        @include addMediaQuery(tablet) {
+            padding: 5.2rem 5rem;
+        }
     }
 
     &__first {
         padding: 17.2rem 4.8rem;
+
+        @include addMediaQuery(tablet) {
+            padding: 5.2rem 5rem;
+        }
     }
 }
 
@@ -215,6 +279,9 @@
     top: 66%;
 }
 
+.work-area {
+    margin: 5rem 0;
+}
 .section-zoho {
     padding: 10.4rem 0;
 
@@ -228,6 +295,7 @@
 
         img {
             height: 6.2rem;
+                        margin-bottom: 2rem;
         }
     }
 
@@ -237,6 +305,13 @@
         font-size: 4.8rem;
         line-height: 6.48rem;
         letter-spacing: 0;
+        margin-bottom: 2rem;
+
+        @include addMediaQuery(tablet) {
+                  font-size: 2.8rem;
+                  line-height: 4rem;
+  
+        }
     }
 
     &__text {
@@ -245,6 +320,7 @@
 
     &__wrap {
         padding: 6.1rem 4.8rem;
+
     }
 }
 
@@ -394,6 +470,21 @@
     align-items: center;
     float: right;
     margin-top: -9rem;
+
+    @include addMediaQuery(laptop) {
+        display: flex;
+        flex-direction: column;
+        writing-mode: unset;
+        margin-top: 1rem;
+
+    }
+}
+
+.hero-area-inner .content-last {
+    @include addMediaQuery(laptop) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .dir-rtl .hero-area .hero-social {

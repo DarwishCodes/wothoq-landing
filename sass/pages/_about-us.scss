@@ -1,6 +1,10 @@
 .section-portfolio {
-    padding: 13rem 0 13rem 0;
+    padding: 13rem 0rem 13rem 0em;
 
+    @include addMediaQuery(laptop) {
+        padding: 13rem 4rem 13rem 4rem;
+
+    }
     &__title {
         h1 {
             font-family: "Lufga", sans-serif;
@@ -42,8 +46,9 @@
 
     &__shape {
         position: absolute;
-        bottom: -5rem;
-        left: -5rem;
+        bottom: -10rem;
+        right: 50%;
+
     }
 }
 

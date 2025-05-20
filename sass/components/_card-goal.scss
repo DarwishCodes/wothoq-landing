@@ -1,5 +1,10 @@
 .card-goal {
     padding: 4rem 4rem 4rem 4rem;
+
+    @include addMediaQuery(laptop) {
+        text-align: center;
+    }
+
     &__title {
         margin-bottom: 2rem;
         margin-top: 2rem;
@@ -31,9 +36,17 @@
 
     &--border-right {
         border-right: 1px solid #00000033;
+
+        @include addMediaQuery(laptop) {
+            border-right: unset;
+        }
     }
 
     &--border-top {
         border-top: 1px solid #00000033;
+
+        @include addMediaQuery(laptop) {
+            border-top: unset;
+        }
     }
 }

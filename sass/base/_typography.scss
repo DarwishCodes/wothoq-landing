@@ -160,6 +160,12 @@
     margin: 1rem 0;
     position: relative;
 
+    @include addMediaQuery(tablet) {
+      margin-bottom: 5rem;
+      font-size: 3rem;
+      line-height: 4.48rem;
+    }
+
     &--inter {
       font-family: "Inter", sans-serif;
     }
@@ -182,6 +188,13 @@
 
     &--w-35 {
       width: 35rem;
+    }
+
+    &--2-lines {
+
+      @include addMediaQuery(tablet) {
+        display: block;
+      }
     }
 
     &--underline {

@@ -108,6 +108,10 @@
         background-color: #e5e7eb;
         z-index: 1;
 
+        @include addMediaQuery(laptop) {
+            display: none;
+        }
+
     }
 }
 
@@ -147,7 +151,7 @@
         font-size: 24px;
     }
 
-    body {
-        padding: 40px 20px;
-    }
+    // body {
+    //     padding: 40px 20px;
+    // }
 }
