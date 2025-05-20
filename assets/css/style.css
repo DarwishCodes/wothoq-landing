@@ -1857,6 +1857,11 @@ body {
   font-size: 76.25px;
   line-height: 80px;
   text-transform: unset; }
+  @media (max-width: 991px) {
+    .blog-details-area-inner .section-header h1 {
+      font-size: 4rem;
+      line-height: 5rem;
+      margin-top: 5rem; } }
 
 @media only screen and (max-width: 991px) {
   .blog-details-area .content-block .content-title {
