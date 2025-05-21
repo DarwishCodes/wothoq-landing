@@ -11,7 +11,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 50%;
+        width: 40%;
         height: 100%;
         background-image: url("../imgs/gallery/bg-3.png");
         background-size: cover;
@@ -29,7 +29,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 50%;
+        width: 40%;
         height: 10rem;
         background-color: $color-primary;
         background-size: cover;
@@ -246,10 +246,12 @@
 }
 
 .hero-right {
-    position: relative;
-    z-index: 1;
-    z-index: 50;
-    height: 100%;
+    // position: relative;
+    // z-index: 1;
+    // z-index: 50;
+    // height: 100%;
+
+
 
     &__text {
         font-family: "Inter", sans-serif;
@@ -274,15 +276,37 @@
     }
 
     &__content {
-        position: absolute;
-        bottom: 2.5rem;
-        z-index: 20;
+        // position: absolute;
+        // bottom: 2rem;
+        // right: -3rem;
+        // width: 40%;
+        // z-index: 20;
 
-        @include addMediaQuery(laptop) {
-            position: unset;
-            margin-right: 3rem;
-            margin-bottom: 2rem;
+        &--desktop {
+            position: absolute;
+            bottom: 2rem;
+            right: -3rem;
+            width: 40%;
+            z-index: 20;
+
+            @include addMediaQuery(laptop) {
+                display: none;
+            }
+
         }
+
+        &--mobile {
+            display: none;
+
+            @include addMediaQuery(laptop) {
+                display: block;
+                position: unset;
+                margin-right: 3rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+
     }
 }
 
@@ -328,7 +352,7 @@
     margin-bottom: -6rem;
 
     @include addMediaQuery(laptop) {
-            margin-bottom: 2rem;
+        margin-bottom: 2rem;
 
     }
 }

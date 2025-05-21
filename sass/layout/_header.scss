@@ -1,24 +1,28 @@
 .header {
 
-  &__button {
-
-
-  }
+  &__button {}
 
   &__logo {
 
     img {
-    height: 6.2rem;
+      height: 6.2rem;
 
+      @include addMediaQuery(phone-m) {
+        height: 4rem;
+      }
     }
   }
 }
 
 .header-area .main-menu li a {
   font-family: "Lugia", sans-serif;
-font-weight: 400;
-font-size: 1.8rem;
-line-height: 2.926rem;
-letter-spacing: 0;
-text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.926rem;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.header-area .header__navicon button i {
+  font-size: 1.8rem;
 }

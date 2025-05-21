@@ -1,6 +1,7 @@
 .client-area-text {
   position: relative;
 }
+
 .client-area-text .text {
   font-size: 30px;
   line-height: 1;
@@ -9,11 +10,13 @@
   inset-inline-start: 40%;
   top: 70px;
 }
+
 @media only screen and (max-width: 1399px) {
   .client-area-text .text {
     font-size: 26px;
   }
 }
+
 @media only screen and (max-width: 1199px) {
   .client-area-text .text {
     font-size: 22px;
@@ -21,6 +24,7 @@
     top: 50px;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .client-area-text .text {
     font-size: 18px;
@@ -28,6 +32,7 @@
     top: 40px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .client-area-text .text {
     text-align: center;
@@ -36,20 +41,24 @@
     margin-bottom: 10px;
   }
 }
+
 .client-area .clients-wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
+
 @media only screen and (max-width: 767px) {
   .client-area .clients-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 575px) {
   .client-area .clients-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .client-area .client-box {
   display: flex;
   justify-content: center;
@@ -61,61 +70,83 @@
   margin-top: -1px;
   border-inline-start-color: rgba(0, 0, 0, 0);
 }
+
 @media only screen and (max-width: 767px) {
   .client-area .client-box {
     border: none;
     aspect-ratio: 100/50;
   }
 }
+
 .client-area .client-box:hover img {
   opacity: 1;
 }
+
 .client-area .client-box:nth-child(1) {
   grid-column-start: 2;
   border-inline-start-color: var(--border);
 }
+
 @media only screen and (max-width: 767px) {
   .client-area .client-box:nth-child(1) {
     grid-column-start: auto;
   }
 }
+
 .client-area .client-box:nth-child(2) {
   grid-column-start: 1;
   border-inline-start-color: var(--border);
 }
+
 @media only screen and (max-width: 767px) {
   .client-area .client-box:nth-child(2) {
     grid-column-start: auto;
   }
 }
+
 .client-area .client-box:nth-child(7) {
   grid-column-start: 2;
   border-inline-start-color: var(--border);
 }
+
 @media only screen and (max-width: 767px) {
   .client-area .client-box:nth-child(7) {
     grid-column-start: auto;
   }
 }
+
 .client-area .client-box:nth-child(12) {
   grid-column-start: 5;
   border-inline-start-color: var(--border);
 }
+
 @media only screen and (max-width: 767px) {
   .client-area .client-box:nth-child(12) {
     grid-column-start: auto;
   }
 }
+
 .client-area .client-box img {
   opacity: 0.6;
   transition: all 0.5s;
-} /*# sourceMappingURL=master-about.css.map */
+}
+
+/*# sourceMappingURL=master-about.css.map */
 
 .client-area-text .text {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 3rem;
-    line-height: 6.48rem;
-    letter-spacing: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 64.8px;
+  top: 50%;
 
+  @media only screen and (max-width: 1199px) {
+    font-size: 40px;
+
+  }
+
+  @include addMediaQuery(laptop) {
+        font-size: 30px;
+        line-height: 38.8px;
+  }
 }

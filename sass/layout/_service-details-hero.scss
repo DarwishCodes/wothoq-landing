@@ -1,0 +1,119 @@
+.career-details-area {
+    
+}
+
+.about-area {
+    position: relative;
+    z-index: 1
+}
+
+.about-area-inner {
+    padding-top: 470px
+}
+
+@media only screen and (max-width: 1399px) {
+    .about-area-inner {
+        padding-top: 470px
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .about-area-inner {
+        padding-top: 120px
+    }
+}
+
+.about-area .area-bg {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px);
+    top: 0;
+    inset-inline-start: 0;
+    z-index: -1
+}
+
+@media only screen and (max-width: 1199px) {
+    .about-area .area-bg {
+        height: calc(100% - 60px)
+    }
+}
+
+.about-area .area-bg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.about-area .section-content {
+    width: 410px;
+    background-color: var(--white);
+    margin-inline-start: auto
+}
+
+.dark .about-area .section-content {
+    background-color: var(--black)
+}
+
+@media(max-width: 575px) {
+    .about-area .section-content {
+        width: 100%
+    }
+}
+
+.about-area .section-content .content-first {
+    padding: 54px 45px 54px
+}
+
+@media only screen and (max-width: 1199px) {
+    .about-area .section-content .content-first {
+        padding: 34px 25px 34px
+    }
+}
+
+.about-area .section-content .wc-btn-normal {
+    padding: 0 45px;
+    color: $color-black;
+    height: 100px;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    text-transform: unset;
+    border-radius: 0;
+}
+
+.dark .about-area .section-content .wc-btn-normal {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+@media only screen and (max-width: 1199px) {
+    .about-area .section-content .wc-btn-normal {
+        padding: 0 35px;
+        height: 60px
+    }
+}
+
+.about-area .job-meta li:not(:first-child) {
+    margin-top: 23px
+}
+
+.about-area .job-meta li .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.742rem;
+    line-height: 30px;
+    display: block;
+    color: #121212;
+    margin-bottom: 2rem;
+}
+
+.about-area .job-meta li .text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #555555;
+    display: block;
+    font-size: 17.02px;
+    line-height: 23.99px;
+
+}

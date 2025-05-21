@@ -172,6 +172,11 @@
     }
 }
 
+.hero-area-inner {
+    padding-inline-end: unset;
+    padding-right: 0;
+}
+
 .hero-area-inner .area-shape-1 {
     inset-inline-end: calc(100% - 90px);
 }
@@ -549,4 +554,12 @@
 .testimonial-area .container {
     z-index: 100000;
     position: relative;
+}
+
+.hero-area .customer-wrapper .thumb {
+    margin-top: 0;
+}
+
+.hero-area .customer-wrapper-box {
+    margin-top: 2.5rem;
 }
