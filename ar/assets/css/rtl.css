@@ -47,6 +47,16 @@ html {
     transform: scaleX(1);
 }
 
+@media (max-width: 768px) {
+    .hero-area .section-title .marked {
+        left: unset;
+        right: 0;
+    }
+}
+
+.hero-area .section-title .rotated img {
+    transform: rotate(180deg) translate(12px, 0px) scale(0.9);
+}
 /* About Page */
 
 .hero-section::after {
