@@ -2859,7 +2859,11 @@ body {
 
 .hero-area-inner {
   padding-inline-end: unset;
-  padding-right: 0; }
+  padding-right: 0;
+  padding-top: 100px; }
+  @media (max-width: 576px) {
+    .hero-area-inner {
+      padding-top: 150px; } }
 
 .hero-area-inner .area-shape-1 {
   inset-inline-end: calc(100% - 90px); }
