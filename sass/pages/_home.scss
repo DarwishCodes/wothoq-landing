@@ -23,17 +23,22 @@
 .hero-area .section-title {
     font-family: "Teko", sans-serif;
     font-weight: 700;
-    font-size: 14rem;
+    font-size: 13rem;
     line-height: 13.224rem;
     letter-spacing: 0;
     position: relative;
-
 
     @include addMediaQuery(tablet) {
         font-size: 7rem;
         line-height: 7.224rem;
     }
 }
+
+// @media only screen and (max-width: 1200px) {
+//     .hero-area .section-title {
+//         font-size: 13rem;
+//     }
+// }
 
 .hero-area .section-title .marked {
     letter-spacing: 0;

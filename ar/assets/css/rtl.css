@@ -31,6 +31,12 @@ html {
     top: 0;
 }
 
+@media (max-width: 992px) {
+    .card-service__line:before {
+        display: none;
+    }
+}
+
 .btn-link img {
     transform: scaleX(-1);
 }
@@ -66,6 +72,12 @@ html {
 .card-goal--border-right {
     border-right: unset;
     border-left: 1px solid #00000033;
+}
+
+@media (max-width: 992px) {
+    .card-goal--border-right {
+        display: none;
+    }
 }
 
 .team-area .team-wrapper-box .shape-1 {
@@ -130,4 +142,3 @@ html {
 }
 
 /* Contact Us Page */
-
