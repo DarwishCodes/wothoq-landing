@@ -172,6 +172,10 @@ body {
     position: absolute;
     top: 0;
     right: 0; }
+    @media (max-width: 576px) {
+      .heading .heading__secondary--shape-2 {
+        height: 3rem;
+        top: -2.5rem; } }
   .heading .heading__secondary--w-36 {
     width: 36rem; }
   .heading .heading__secondary--w-35 {
