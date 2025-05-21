@@ -2801,10 +2801,16 @@ body {
     .hero-area .section-title.section-title-secondary {
       line-height: 11.224rem; } }
 
-@media (max-width: 991px) {
+.hero-area .section-content {
+  grid-template-columns: 1fr 598px; }
+  @media (max-width: 991px) {
+    .hero-area .section-content {
+      display: flex;
+      flex-direction: column; } }
+
+@media only screen and (max-width: 1919px) {
   .hero-area .section-content {
-    display: flex;
-    flex-direction: column; } }
+    grid-template-columns: 1fr 420px; } }
 
 .hero-area .section-content .text {
   max-width: unset; }

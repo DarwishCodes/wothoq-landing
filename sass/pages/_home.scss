@@ -102,10 +102,17 @@
 }
 
 .hero-area .section-content {
+    grid-template-columns: 1fr 598px;
 
     @include addMediaQuery(laptop) {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1919px) {
+    .hero-area .section-content {
+        grid-template-columns: 1fr 420px;
     }
 }
 
