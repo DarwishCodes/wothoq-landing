@@ -2775,7 +2775,7 @@ body {
 
 .hero-area .video-btn-box {
   top: 91%;
-  right: 10%; }
+  left: 32%; }
   .hero-area .video-btn-box--mobile {
     display: none; }
     @media (max-width: 991px) {
