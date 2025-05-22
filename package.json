@@ -9,9 +9,12 @@
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass watch-ar:sass",
     "compile:sass": "node-sass sass/main.scss assets/css/style.comp.css",
+    "compile-ar:sass": "node-sass sass/main.scss ar/assets/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/css/style.comp.css -o assets/css/style.prefix.css",
+    "prefix-ar:css": "postcss --use autoprefixer -b \"last 10 versions\" ar/assets/css/style.comp.css -o ar/assets/css/style.prefix.css",
     "compress:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "compress-ar:css": "node-sass ar/assets/css/style.prefix.css ar/assets/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css compile-ar:sass prefix-ar:css compress-ar:css"
   },
   "author": "Muhammad Darwish",
   "license": "ISC",
